@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainCards {
+    padding: 15%;
+    .botones {
+      margin-top: 10%;
+    }
+    h1 {
+      font-size: 300%;
+    }
+  }
+  .orangeContainer {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .greenContainer {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}

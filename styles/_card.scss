@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 65%;
+  height: 500px;
+}
+.mainCards {
+  padding: 5%;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 500px;
+  h1 {
+    width: 100%;
+    color: $lightGray;
+    font-family: $shoulders;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 15% 0 10% 0;
+  }
+  svg {
+    margin-top: 5%;
+  }
+  p {
+    color: $paragraphs;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .botones {
+    height: 25px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    min-width: 130px;
+    max-width: 150px;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 90%;
+    margin-top: 25%;
+  }
+}
+
+.blueContainer {
+  background-color: $cyan;
+  .botones {
+    color: $cyan;
+    transition: 0.3s ease-out;
+  }
+  .botones:hover {
+    background-color: $cyan;
+    color: $lightGray;
+    border: solid 2px $lightGray;
+  }
+}
+.orangeContainer {
+  background-color: $orange;
+  border-radius: 0.5rem 0 0 0.5rem;
+
+  .botones {
+    color: $orange;
+    transition: 0.2s ease-out;
+  }
+  .botones:hover {
+    background-color: $orange;
+    color: $lightGray;
+    border: solid 2px $lightGray;
+  }
+}
+.greenContainer {
+  background-color: $darkCyan;
+  border-radius: 0 0.5rem 0.5rem 0;
+
+  .botones {
+    color: $darkCyan;
+    transition: 0.2s ease-out;
+  }
+  .botones:hover {
+    background-color: $darkCyan;
+    color: $lightGray;
+    border: solid 2px $lightGray;
+  }
+}

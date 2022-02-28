@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  max-width: 1440px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 65%;
+  height: 500px;
+}
+
+.mainCards {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 500px;
+}
+
+.mainCards h1 {
+  width: 100%;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 15% 0 10% 0;
+}
+
+.mainCards svg {
+  margin-top: 5%;
+}
+
+.mainCards p {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.mainCards .botones {
+  height: 25px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 20px 0;
+  min-width: 130px;
+  max-width: 150px;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 90%;
+  margin-top: 25%;
+}
+
+.blueContainer {
+  background-color: #006970;
+}
+
+.blueContainer .botones {
+  color: #006970;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.blueContainer .botones:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border: solid 2px #f2f2f2;
+}
+
+.orangeContainer {
+  background-color: #e38826;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.orangeContainer .botones {
+  color: #e38826;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.orangeContainer .botones:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: solid 2px #f2f2f2;
+}
+
+.greenContainer {
+  background-color: #004241;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.greenContainer .botones {
+  color: #004241;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.greenContainer .botones:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border: solid 2px #f2f2f2;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainCards {
+    padding: 15%;
+  }
+  .mainCards .botones {
+    margin-top: 10%;
+  }
+  .mainCards h1 {
+    font-size: 300%;
+  }
+  .orangeContainer {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .greenContainer {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+/*# sourceMappingURL=imports.css.map */
